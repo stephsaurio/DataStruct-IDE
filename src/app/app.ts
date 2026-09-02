@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CodeEditor } from './components/code-editor/code-editor';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CodeEditor],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
