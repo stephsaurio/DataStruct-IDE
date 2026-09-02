@@ -1,10 +1,14 @@
 .app-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 30px;
+  font-family: Arial, sans-serif;
 }
 
 .app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 25px;
 }
 
@@ -14,5 +18,41 @@
 }
 
 .app-header p {
-  margin-top: 5px;
+  margin: 5px 0 0;
+  color: #666;
 }
+
+.analyze-button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.editor-section,
+.errors-section,
+.tokens-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.errors-section {
+  min-height: 350px;
+}
+
+
+
+.tokens-section {
+  margin-top: 20px;
+}
+
+

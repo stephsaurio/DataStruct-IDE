@@ -1,0 +1,12 @@
+.error-panel {
+  min-height: 350px;
+}
+
+.error-panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.empty-message {
+  color: #777;
+}
