@@ -1,0 +1,27 @@
+.editor-container {
+  width: 100%;
+}
+
+.editor-header {
+  margin-bottom: 10px;
+}
+
+.editor-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.code-area {
+  width: 100%;
+  min-height: 350px;
+  padding: 15px;
+
+  font-family: Consolas, monospace;
+  font-size: 15px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  resize: vertical;
+  box-sizing: border-box;
+}
