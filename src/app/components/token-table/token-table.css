@@ -1,0 +1,26 @@
+.token-table h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: 600;
+}
+
+.empty-table {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+}

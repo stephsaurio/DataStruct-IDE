@@ -1,8 +1,24 @@
 <main class="app-container">
   <header class="app-header">
-    <h1>DataStruct IDE</h1>
-    <p>Data Structures Programming Language</p>
+    <div>
+      <h1>DataStruct IDE</h1>
+      <p>Data Structures Programming Language</p>
+    </div>
+
+    <button class="analyze-button">Analyze</button>
   </header>
 
-  <app-code-editor></app-code-editor>
+  <section class="workspace">
+    <div class="editor-section">
+      <app-code-editor></app-code-editor>
+    </div>
+
+    <aside class="errors-section">
+      <app-error-panel></app-error-panel>
+    </aside>
+  </section>
+
+  <section class="tokens-section">
+    <app-token-table></app-token-table>
+  </section>
 </main>
