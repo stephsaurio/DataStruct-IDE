@@ -3,12 +3,20 @@
 }
 
 .editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 
 .editor-header h2 {
   margin: 0;
   font-size: 18px;
+}
+
+.line-counter {
+  font-size: 13px;
+  color: #777;
 }
 
 .code-area {
@@ -18,6 +26,7 @@
 
   font-family: Consolas, monospace;
   font-size: 15px;
+  line-height: 1.5;
 
   border: 1px solid #ccc;
   border-radius: 6px;
