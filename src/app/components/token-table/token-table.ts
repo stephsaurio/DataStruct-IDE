@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Token } from '../../models/token';
 
 @Component({
-  imports: [],
   selector: 'app-token-table',
-  styleUrl: './token-table.css',
+  imports: [],
   templateUrl: './token-table.html',
+  styleUrl: './token-table.css',
 })
-export class TokenTable {}
+export class TokenTable {
+
+  @Input() tokens: Token[] = [];
+
+}

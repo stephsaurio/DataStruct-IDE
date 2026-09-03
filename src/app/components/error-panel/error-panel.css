@@ -1,12 +1,21 @@
-.error-panel {
-  min-height: 350px;
+.error-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.error-panel h2 {
-  margin-top: 0;
-  font-size: 18px;
+.error-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
-.empty-message {
-  color: #777;
+.error-item strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.error-item span {
+  font-size: 13px;
+  color: #666;
 }

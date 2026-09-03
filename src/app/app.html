@@ -5,11 +5,7 @@
       <p>Data Structures Programming Language</p>
     </div>
 
-<button
-  class="analyze-button"
-  (click)="analyzeCode()">
-  Analyze
-</button>
+    <button class="analyze-button" (click)="analyzeCode()">Analyze</button>
   </header>
 
   <section class="workspace">
@@ -18,11 +14,11 @@
     </div>
 
     <aside class="errors-section">
-      <app-error-panel></app-error-panel>
+      <app-error-panel [errors]="errors"></app-error-panel>
     </aside>
   </section>
 
   <section class="tokens-section">
-    <app-token-table></app-token-table>
+    <app-token-table [tokens]="tokens"></app-token-table>
   </section>
 </main>

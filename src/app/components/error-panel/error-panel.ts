@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { LexicalError } from '../../models/lexical-error';
 
 @Component({
-  imports: [],
   selector: 'app-error-panel',
-  styleUrl: './error-panel.css',
+  imports: [],
   templateUrl: './error-panel.html',
+  styleUrl: './error-panel.css',
 })
-export class ErrorPanel {}
+export class ErrorPanel {
+
+  @Input() errors: LexicalError[] = [];
+
+}
