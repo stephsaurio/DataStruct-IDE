@@ -1,25 +1,35 @@
 .error-container {
   width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 1px solid #f1ccd9;
+  border-radius: 6px;
+  background-color: #fffafb;
 }
 
 .error-container h2 {
-  margin-top: 0;
-  font-size: 18px;
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: #b83268;
 }
 
 .no-errors {
-  color: #777;
+  margin: 0;
+  color: #8c6675;
+  font-size: 14px;
 }
 
 .error-item {
   padding: 10px;
   margin-bottom: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #e9a9bf;
   border-radius: 6px;
+  background-color: #fff3f7;
 }
 
 .error-item p {
   margin: 0 0 5px;
+  color: #9f2f5c;
 }
 
 .error-item span {

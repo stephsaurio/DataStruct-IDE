@@ -1,6 +1,11 @@
-.token-table h2 {
+.table-container {
+  width: 100%;
+}
+
+.table-container h2 {
   margin-top: 0;
   font-size: 18px;
+  color: #b83268;
 }
 
 table {
@@ -12,15 +17,21 @@ th,
 td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f0d5df;
 }
 
 th {
+  background-color: #fbe8ef;
+  color: #9f2f5c;
   font-weight: 600;
+}
+
+tbody tr:hover {
+  background-color: #fff6f9;
 }
 
 .empty-table {
   text-align: center;
-  padding: 25px;
-  color: #777;
+  color: #999;
+  padding: 20px;
 }

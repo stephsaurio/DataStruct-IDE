@@ -12,28 +12,19 @@
 .editor-header h2 {
   margin: 0;
   font-size: 18px;
+  color: #b83268;
 }
 
 .line-counter {
   font-size: 13px;
-  color: #777;
+  color: #a85a79;
 }
 
-.code-area {
-  position: relative;
-  resize: vertical;
-
-  border: 1px solid #ccc;
-  border-radius: 6px;
-
-  color: transparent;
-  background: transparent;
-  caret-color: black;
-}
 .editor-wrapper {
   position: relative;
   width: 100%;
   min-height: 350px;
+  border-radius: 6px;
 }
 
 .highlight-layer,
@@ -55,7 +46,29 @@
   left: 0;
   margin: 0;
   pointer-events: none;
+  z-index: 1;
+  background-color: #fffafb;
+  border: 1px solid #efc5d6;
+  border-radius: 6px;
 }
+
+.code-area {
+  position: relative;
+  resize: vertical;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: transparent;
+  background: transparent;
+  caret-color: #b83268;
+  z-index: 2;
+  outline: none;
+}
+
+.code-area:focus {
+  border-color: #d94f87;
+}
+
+
 .syntax-reserved {
   color: darkblue;
 }
@@ -78,12 +91,4 @@
 
 .syntax-comment {
   color: gray;
-}
-
-.highlight-layer {
-  z-index: 1;
-}
-
-.code-area {
-  z-index: 2;
 }

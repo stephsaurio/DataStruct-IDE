@@ -2,7 +2,7 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 30px;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .app-header {
@@ -10,16 +10,19 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #f3c1d5;
 }
 
 .app-header h1 {
   margin: 0;
   font-size: 28px;
+  color: #b83268;
 }
 
 .app-header p {
   margin: 5px 0 0;
-  color: #666;
+  color: #777;
 }
 
 .analyze-button {
@@ -28,6 +31,15 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
+
+  background-color: #d94f87;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.analyze-button:hover {
+  background-color: #bd3c70;
 }
 
 .workspace {
@@ -40,29 +52,28 @@
 .editor-section,
 .errors-section,
 .tokens-section {
-  border: 1px solid #ddd;
+  border: 1px solid #efc5d6;
   border-radius: 8px;
   padding: 20px;
+  background-color: #fff;
 }
 
 .errors-section {
   min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .tokens-section {
   margin-top: 20px;
 }
 
-.errors-section {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
 .errors-title {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
+  color: #b83268;
 }
 
 .error-panels {
