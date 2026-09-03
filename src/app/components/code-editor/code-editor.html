@@ -1,18 +1,17 @@
 <div class="editor-container">
-
   <div class="editor-header">
     <h2>Code Editor</h2>
-
-    <span class="line-counter">
-      Lines: {{ lineCount }}
-    </span>
+    <span class="line-counter">Lines: {{ lineCount }}</span>
   </div>
 
-  <textarea
-    class="code-area"
-    [(ngModel)]="codeContent"
-    placeholder="Write your code here..."
-    spellcheck="false">
-  </textarea>
-
+  <div class="editor-wrapper">
+    <pre class="highlight-layer" [innerHTML]="highlightedCode"></pre>
+    <textarea
+      class="code-area"
+      [(ngModel)]="codeContent"
+      placeholder="Write your code here..."
+      spellcheck="false"
+    >
+    </textarea>
+  </div>
 </div>
