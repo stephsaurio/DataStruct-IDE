@@ -168,6 +168,9 @@ export class Lexer {
 
       //multiline comments
       if (currentChar === '/' && sourceCode[index + 1] === '*') {
+        const startLine = line;
+        const startColumn = column;
+
         index += 2;
         column += 2;
 
@@ -185,10 +188,21 @@ export class Lexer {
           }
         }
 
-        // Skip */
-        if (index < sourceCode.length) {
+        // Closed comment
+        if (
+          index < sourceCode.length &&
+          sourceCode[index] === '*' &&
+          sourceCode[index + 1] === '/'
+        ) {
           index += 2;
           column += 2;
+        } else {
+          // Unclosed multiline comment
+          this.errors.push({
+            message: 'Unclosed multiline comment',
+            line: startLine,
+            column: startColumn,
+          });
         }
 
         continue;
