@@ -5,7 +5,9 @@
       <p>Data Structures Programming Language</p>
     </div>
 
-    <button class="analyze-button" (click)="analyzeCode()">Analyze</button>
+    <button class="analyze-button" (click)="analyzeCode()">
+      Analyze
+    </button>
   </header>
 
   <section class="workspace">
@@ -14,7 +16,17 @@
     </div>
 
     <aside class="errors-section">
-      <app-error-panel [errors]="errors"></app-error-panel>
+      <h2 class="errors-title">Analysis Errors</h2>
+
+      <div class="error-panels">
+        <app-error-panel
+          [errors]="errors">
+        </app-error-panel>
+
+        <app-syntactic-error-panel
+          [errors]="syntacticErrors">
+        </app-syntactic-error-panel>
+      </div>
     </aside>
   </section>
 

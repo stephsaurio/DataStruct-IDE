@@ -1,0 +1,14 @@
+<div class="error-container">
+  <h2>Syntactic Errors</h2>
+
+  @if (errors.length === 0) {
+    <p class="no-errors">No syntactic errors</p>
+  }
+
+  @for (error of errors; track $index) {
+    <div class="error-item">
+      <p>{{ error.message }}</p>
+      <span>Line: {{ error.line }} | Column: {{ error.column }}</span>
+    </div>
+  }
+</div>
