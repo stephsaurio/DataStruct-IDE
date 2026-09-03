@@ -20,17 +20,70 @@
 }
 
 .code-area {
-  width: 100%;
-  min-height: 350px;
-  padding: 15px;
-
-  font-family: Consolas, monospace;
-  font-size: 15px;
-  line-height: 1.5;
+  position: relative;
+  resize: vertical;
 
   border: 1px solid #ccc;
   border-radius: 6px;
 
-  resize: vertical;
+  color: transparent;
+  background: transparent;
+  caret-color: black;
+}
+.editor-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+}
+
+.highlight-layer,
+.code-area {
+  width: 100%;
+  min-height: 350px;
+  padding: 15px;
+  font-family: Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.5;
   box-sizing: border-box;
+  white-space: pre-wrap;
+  overflow-wrap: normal;
+}
+
+.highlight-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+}
+.syntax-reserved {
+  color: darkblue;
+}
+
+.syntax-identifier {
+  color: darkgreen;
+}
+
+.syntax-number {
+  color: orange;
+}
+
+.syntax-string {
+  color: purple;
+}
+
+.syntax-operator {
+  color: red;
+}
+
+.syntax-comment {
+  color: gray;
+}
+
+.highlight-layer {
+  z-index: 1;
+}
+
+.code-area {
+  z-index: 2;
 }
