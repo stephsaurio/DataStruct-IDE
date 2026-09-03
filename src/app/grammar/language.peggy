@@ -31,9 +31,21 @@ identifier
       return first + rest.join("");
     }
 
-_ = [ \t\r\n]*
+_
+  = (whitespace / singleLineComment / multilineComment)*
 
-__ = [ \t\r\n]+
+__
+  = (whitespace / singleLineComment / multilineComment)+
+
+whitespace
+  = [ \t\r\n]
+
+singleLineComment
+  = "//" [^\r\n]*
+
+multilineComment
+  = "/*" (!"*/" .)* "*/"
+  
 queueDeclaration
   = "QUEUE" __ identifier:identifier _ ";" _ {
       return {
