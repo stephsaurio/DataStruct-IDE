@@ -1,0 +1,21 @@
+export const reservedWords: string[] = [
+  'STACK',
+  'QUEUE',
+  'LIST',
+  'HASH',
+  'TREE',
+  'PUSH',
+  'POP',
+  'ENQUEUE',
+  'DEQUEUE',
+  'INSERT',
+  'REMOVE',
+  'SET',
+  'GET',
+  'ADDNODE',
+  'ROOT',
+  'LEFT',
+  'RIGHT',
+  'PRINT',
+  'GRAPH'
+];
