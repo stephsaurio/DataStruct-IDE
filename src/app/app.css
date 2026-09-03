@@ -49,10 +49,24 @@
   min-height: 350px;
 }
 
-
-
 .tokens-section {
   margin-top: 20px;
 }
 
+.errors-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
+.errors-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.error-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

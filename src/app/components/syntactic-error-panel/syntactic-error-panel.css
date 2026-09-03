@@ -1,0 +1,28 @@
+.error-container {
+  width: 100%;
+}
+
+.error-container h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.no-errors {
+  color: #777;
+}
+
+.error-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.error-item p {
+  margin: 0 0 5px;
+}
+
+.error-item span {
+  font-size: 13px;
+  color: #777;
+}
